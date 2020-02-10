@@ -18,16 +18,16 @@ namespace Lab01_EDII.Controllers
             Arbol.Instance.AddSoda(ssoda);
         }
 
-        [HttpGet]
-        public Soda Get()
+        [HttpGet("/{name}")]
+        public Soda Get(string name)
         {
-            
+            return Arbol.Instance.SearchSoda(name);
         }
 
-        [HttpGet]
+        [HttpGet("/tree")]
         public Arbol Get()
         {
-
+            return Arbol.Instance;
         }
     }
 }

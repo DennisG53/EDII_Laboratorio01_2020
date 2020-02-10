@@ -55,7 +55,5 @@ namespace Lab01_EDII.Models
             }
             return null;
         }
-
-        
     }
 }
